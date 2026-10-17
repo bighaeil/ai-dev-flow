@@ -1,0 +1,7 @@
+{
+  "project": "<project>",
+  "src_paths": ["<service>/app/<module>"],
+  "tests_path": ["<service>/tests"],
+  "contract_tests_path": ["<service>/tests/contract"],
+  "docs_dir": "devflow/<project>"
+}

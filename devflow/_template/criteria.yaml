@@ -1,0 +1,18 @@
+project: <project>
+src_paths:
+  - <service>/app/<module>
+tests_path:
+  - <service>/tests
+contract_tests_path:
+  - <service>/tests/contract
+
+criteria:
+  - id: C1
+    goal_ref: "01-goal.md §③ SC-1"
+    statement: "<성공 기준 한 문장>"
+    checks:
+      - id: C1-T1
+        kind: test            # test(새 동작, 3단계 red) | contract(현행 고정, 3단계부터 green·7단계 매일) | eval(6단계) | ops(7단계)
+        where: "<service>/tests/test_x.py::test_y"
+        measure: "<입력 → 기대 출력을 그대로>"
+        note: ""
